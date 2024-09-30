@@ -1,0 +1,20 @@
+.footerStyle {
+  background-color: #282c34;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerStyle a {
+  color: #62c2dd;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.footerStyle a:hover {
+  color: #21a1f1;
+}

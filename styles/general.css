@@ -23,7 +23,7 @@ body {
 .filter-btn {
   padding: 10px 20px;
   margin: 5px;
-  background-color: #5eb2d0;
+  background-color: #454c5a;
   color: white;
   border: none;
   border-radius: 5px;
@@ -33,7 +33,7 @@ body {
 }
 
 .filter-btn:hover {
-  background-color: #46869d;
+  background-color: #282c34;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 

@@ -13,7 +13,7 @@
 .filter-btn {
   padding: 10px 20px;
   margin: 5px;
-  background-color: #5eb2d0;
+  background-color: #454c5a;
   color: white;
   border: none;
   border-radius: 5px;
@@ -23,6 +23,26 @@
 }
 
 .filter-btn:hover {
-  background-color: #46869d;
+  background-color: #282c34;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.footerStyle {
+  background-color: #282c34;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerStyle a {
+  color: #62c2dd;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+.footerStyle a:hover {
+  color: #21a1f1;
 }

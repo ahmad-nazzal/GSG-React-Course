@@ -24,25 +24,53 @@ const App = () => {
       : productsData.filter((product) => product.category === activeFilter);
 
   return (
-    <div>
-      <div className="header">
-        <h1>Product List</h1>
-      </div>
-      <div className="filter-section">
-        <button className="filter-btn" onClick={() => setActiveFilter("All")}>
-          All
-        </button>
-        {[...uniqueCategories].map((category) => (
-          <button
-            className="filter-btn"
-            onClick={() => setActiveFilter(category)}
-          >
-            {category}
+    <>
+      <div>
+        <div className="header">
+          <h1>Product List</h1>
+        </div>
+        <div className="filter-section">
+          <button className="filter-btn" onClick={() => setActiveFilter("All")}>
+            All
           </button>
-        ))}
+          {[...uniqueCategories].map((category) => (
+            <button
+              className="filter-btn"
+              onClick={() => setActiveFilter(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+        <ProductList products={filteredProducts} />
       </div>
-      <ProductList products={filteredProducts} />
-    </div>
+      <footer className="footerStyle">
+        <p>
+          Developed by <strong>Ahmad Nazzal</strong> &copy;{" "}
+          {new Date().getFullYear()}
+        </p>
+        <p>
+          Follow me on:
+          <a
+            href="https://github.com/ahmad-nazzal"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            GitHub
+          </a>{" "}
+          |
+          <a
+            href="https://www.linkedin.com/in/ahmad-nazzal-b21143265/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            LinkedIn
+          </a>
+        </p>
+      </footer>
+    </>
   );
 };
 
